@@ -1,52 +1,96 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-<meta charset="UTF-8">
-<title>بطاقتي الرقمية</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body{
-  font-family: Arial;
-  background:#f2f2f2;
-  text-align:center;
-}
-.card{
-  background:white;
-  padding:20px;
-  margin:40px auto;
-  max-width:350px;
-  border-radius:15px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-a{
-  display:block;
-  margin:8px 0;
-  padding:12px;
-  border-radius:8px;
-  color:white;
-  text-decoration:none;
-  font-size:16px;
-}
-.phone{background:#333;}
-.whatsapp{background:#25D366;}
-.telegram{background:#0088cc;}
-.instagram{background:#E1306C;}
-.facebook{background:#1877F2;}
-.snapchat{background:#FFFC00; color:black;}
-</style>
+    <meta charset="UTF-8">
+    <title>بطاقتي الرقمية</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome للأيقونات -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('YOUR_IMAGE_URL') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 35px;
+            border-radius: 25px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 360px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 28px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .btn:hover {
+            transform: scale(1.2);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        /* ألوان كل تطبيق */
+        .call { background: #4CAF50; }       /* أخضر */
+        .whatsapp { background: #25D366; }  /* أخضر واتساب */
+        .facebook { background: #1877F2; }  /* أزرق فيسبوك */
+        .telegram { background: #0088cc; }  /* أزرق تيليجرام */
+        .instagram { background: #C13584; } /* لون إنستجرام */
+        .snapchat { background: #FFFC00; color:#000; } /* أصفر سناب */
+    </style>
 </head>
-
 <body>
-<div class="card">
-  <h2>بيلو</h2>
-  <p>بطاقتي الرقمية</p>
 
-  <a class="phone" href="tel:+967777992282">اتصال</a>
-  <a class="whatsapp" href="https://wa.me/967777992282">واتساب</a>
-  <a class="telegram" href="https://t.me/alhamzah98">تيليجرام</a>
-  <a class="instagram" href="https://instagram.com/https://www.instagram.com/h9mzah?igsh=cGhjcnNlNzZ5eGxk">انستغرام</a>
-  <a class="facebook" href="https://facebook.com/https://www.facebook.com/share/182spPLUE9/">فيس بوك</a>
-  <a class="snapchat" href="https://www.snapchat.com/add/h9mzh">سناب شات</a>
+<div class="card">
+    <h1>بطاقتي الرقمية</h1>
+    <p>تواصل معي عبر:</p>
+    <div class="buttons">
+        <a class="btn call" href="tel:+967777992282" title="اتصال"><i class="fas fa-phone"></i></a>
+        <a class="btn whatsapp" href="https://wa.me/967777992282" title="واتساب"><i class="fab fa-whatsapp"></i></a>
+        <a class="btn facebook" href="https://facebook.com/https://www.facebook.com/share/182spPLUE9/" title="فيسبوك"><i class="fab fa-facebook"></i></a>
+        <a class="btn telegram" href="https://t.me/alhamzah98" title="تيليجرام"><i class="fab fa-telegram"></i></a>
+        <a class="btn instagram" href="https://instagram.com/https://www.instagram.com/h9mzah?igsh=cGhjcnNlNzZ5eGxk" title="إنستجرام"><i class="fab fa-instagram"></i></a>
+        <a class="btn snapchat" href="https://snapchat.com/add/h9mzah" title="سناب شات"><i class="fab fa-snapchat"></i></a>
+    </div>
 </div>
+
 </body>
 </html>
